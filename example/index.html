@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example</title>
+</head>
+
+<body>
+    <p>Demo</p>
+    <img src='./demo.jpg' alt="">
+</body>
+<script src="../lib/getPrimaryColor.js"></script>
+<script>
+    const primary = new primaryColor()
+
+    primary.getPrimaryColor({
+        cover: "./demo.jpg",
+        success(primaryColor) {
+            console.log(primaryColor);
+            document.body.style.backgroundColor = primaryColor
+        },
+        error(err) {
+            console.log(err);
+        }
+    })
+
+</script>
+
+</html>
