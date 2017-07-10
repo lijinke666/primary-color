@@ -2,7 +2,7 @@
 get image cover primary color js plugin
 
 ### How To Use ?
-```
+```javascript
   <script src="../lib/getPrimaryColor.js"></script>
   ...
   const primary = new primaryColor()
